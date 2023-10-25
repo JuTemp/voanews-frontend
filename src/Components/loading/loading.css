@@ -1,0 +1,21 @@
+img#loading {
+    
+    --r: 40px;
+    width: var(--r);
+    height: var(--r);
+    display: flex;
+    margin: auto;
+
+    animation: spinning 3s linear 0s infinite;
+    
+}
+
+@keyframes spinning
+{
+    from {
+        transform: rotate(0turn);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+}

@@ -1,0 +1,84 @@
+section.container {
+  height: auto;
+  width: auto;
+  max-width: 1080px;
+  margin: 2vmin auto;
+  border-radius: 2vmin;
+  padding: 2vmin;
+  background-color: rgb(247, 247, 247);
+
+  font-family: Ubuntu-Regular;
+}
+
+.ant-typography, .ant-message-info, .ant-menu-title-content {
+  font-family: Ubuntu-Regular;
+}
+
+.ant-menu-title-content {
+  font-size: 1.4rem;
+}
+
+.ant-btn {
+  transition: none;
+}
+
+.content {
+  font-size: 1.4rem;
+}
+
+.ant-message-info {
+  font-size: 1rem;
+}
+
+.no-menu {
+  pointer-events: none;
+}
+
+section.container article.ant-typography div:nth-child(2) {
+  font-size: 1.2rem;
+  margin-left: 20px;
+}
+
+.none {
+  display: none !important;
+}
+
+#floatContainer {
+  display: grid;
+}
+
+#floatButton {
+  position: fixed;
+  background-color: lightgray;
+  top: var(--t);
+  left: var(--l);
+}
+
+#floatDiv {
+  opacity: 1;
+  position: fixed;
+  top: 10px;
+  max-width: 80vw;
+  background-color: lightgray;
+  justify-self: center;
+}
+
+#floatDiv.paused {
+  animation-play-state: paused;
+  opacity: 1;
+}
+
+#floatDiv.animate {
+  animation: fadeOut 2s 2s forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}

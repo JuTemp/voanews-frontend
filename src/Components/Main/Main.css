@@ -1,0 +1,25 @@
+section.container {
+  height: auto;
+  width: auto;
+  margin: 2vmin;
+  border-radius: 2vmin;
+  padding: 2vmin;
+  background-color: rgb(247, 247, 247);
+
+  font-family: Ubuntu-Regular;
+}
+
+.ant-typography, .ant-input {
+  font-family: unset;
+}
+
+nav {
+  background-color: #E0FFFF;
+  display: flex;
+  flex-direction: row;
+}
+
+nav ul span {
+  font-size: 1.5rem;
+  line-height: 50px;
+}
